@@ -1,0 +1,9 @@
+#!/bin/bash
+# Week 2 Exercise 1
+
+cd dirtree1
+
+for i in *
+do
+     echo -e "$i \t" $(cut -f 4 $i/$i/*.tbl| head -3|tail -1)
+   done
